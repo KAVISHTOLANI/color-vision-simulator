@@ -1,0 +1,26 @@
+/* Color Lens specific styles */
+.hero-cl { display: grid; gap: 14px; }
+.hero-row { display: grid; grid-template-columns: 92px minmax(0, 1fr); align-items: center; gap: 12px; animation: row-in 0.5s var(--ease) both; animation-delay: calc(var(--i) * 120ms + 300ms); }
+.sw-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+.sw-row i { display: block; height: 34px; border-radius: var(--radius-sm); box-shadow: inset 0 0 0 1px rgb(0 0 0 / 0.08); transition: background 0.4s var(--ease); }
+@keyframes row-in { from { opacity: 0; transform: translateX(-8px); } }
+.upload-field .btn { cursor: pointer; }
+.upload-field .btn:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
+.upload-field .label { font-size: 0.82rem; font-weight: 600; }
+.sim-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 16px; }
+.sim { margin: 0; display: grid; gap: 10px; align-content: start; }
+.sim canvas { display: block; width: 100%; height: auto; border-radius: var(--radius-sm); border: 1px solid var(--border); background: #fff; }
+.sim figcaption { display: grid; gap: 4px; justify-items: start; }
+.swatches th, .swatches td { text-align: center; }
+.swatches thead th { font-family: var(--font-mono); font-size: 0.78rem; white-space: nowrap; }
+.swatches tbody th { text-align: left; white-space: nowrap; }
+.sw { display: inline-block; width: 44px; height: 30px; border-radius: var(--radius-sm); box-shadow: inset 0 0 0 1px rgb(0 0 0 / 0.1); vertical-align: middle; }
+.rm { margin-left: 4px; width: 24px; height: 24px; font-size: 0.7rem; }
+.pair { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: 0.82rem; white-space: nowrap; margin-right: 8px; }
+.pair i { width: 16px; height: 16px; border-radius: 4px; box-shadow: inset 0 0 0 1px rgb(0 0 0 / 0.1); }
+.table td.low { color: var(--warn); font-weight: 700; }
+tr.risk th, tr.risk td { background: var(--warn-soft); }
+.prose-page { max-width: 760px; }
+.prose-page p, .prose-page li { line-height: 1.65; }
+@media (prefers-reduced-motion: reduce) { .hero-row { animation: none; } .sw-row i { transition: none; } }
+.swatches thead th:first-child { text-align: left; }
