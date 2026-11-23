@@ -2,7 +2,7 @@
 
 A colour-vision deficiency simulator. Preview images and palettes as people with protanopia, deuteranopia, tritanopia or achromatopsia are likely to see them, and find the colour pairs that stop being distinguishable.
 
-**Live demo:** [https://color-lens.vercel.app/](https://color-lens.vercel.app/) — runs entirely in your browser; images are never uploaded.
+**Live demo:** [https://color-lens-app.vercel.app/](https://color-lens-app.vercel.app/) — runs entirely in your browser; images are never uploaded.
 
 ![Landing with a simulated category palette](docs/landing.png)
 
